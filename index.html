@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#315bd6">
+  <meta name="description"
+        content="Бесплатный мини-курс олимпиадной математики для 4 класса.">
+  <title>Код Маяка</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./index.html" id="brand">Код Маяка</a>
+      <span class="badge">Математика · 4 класс</span>
+    </div>
+    <nav aria-label="Основная навигация">
+      <button type="button" data-nav="home">Главная</button>
+      <button type="button" data-nav="map">Уроки</button>
+      <button type="button" data-nav="progress">Мой прогресс</button>
+      <button type="button" data-nav="final">Финал</button>
+    </nav>
+  </header>
+
+  <div class="page">
+    <section class="progress-panel" aria-label="Прогресс курса">
+      <div class="progress-caption">
+        <label for="course-progress">Механизмы Маяка</label>
+        <strong id="progress-text">0 из 8</strong>
+      </div>
+      <progress id="course-progress" max="8" value="0">0%</progress>
+    </section>
+
+    <p id="storage-warning" class="warning" role="alert" hidden></p>
+    <p id="notice" class="notice" role="status" aria-live="polite"></p>
+
+    <main id="app" tabindex="-1">
+      <p>Загружаем приключение…</p>
+    </main>
+
+    <noscript>
+      <p class="warning">
+        Для работы курса включите JavaScript в настройках браузера.
+      </p>
+    </noscript>
+
+    <footer>
+      <p>
+        Учимся рассуждать, а не спешить.
+        Прогресс хранится только в этом браузере.
+      </p>
+      <button type="button" class="danger" id="reset">
+        Сбросить прогресс
+      </button>
+    </footer>
+  </div>
+</body>
+</html>
